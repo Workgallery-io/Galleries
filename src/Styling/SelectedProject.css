@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  height: 125px;
+  width: 100%;
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.container h2 {
+  padding-left: 100px;
+
+}
+
+.container {
+  position: relative;
+}
+
+.container::after {
+  content: '';
+  display: block;
+  height: 0.1px;
+  background-color: #0C312A;
+  width: 40%;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+}
+
+@keyframes fadeInOutRotate {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
+.sparkle-icon img {
+  animation: fadeInOutRotate 4s infinite;
+  width: 34px;
+  margin-left: 10px;
+  height: auto;
+}
+
+@media (max-width: 480px){
+  .container h2 {
+    padding-left: 50px;
+   
+  }
+}

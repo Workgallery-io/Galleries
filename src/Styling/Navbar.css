@@ -1,0 +1,18 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  gap: 12px;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    display: none;
+  }
+}

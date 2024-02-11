@@ -1,0 +1,153 @@
+.headline {
+  font-size: 23px;
+  line-height: 67px;
+  margin: 0px;
+  color: #FFFFFF;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+h1 {
+  margin: 0px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  gap: 20px;
+}
+
+
+
+.image-container img {
+  width: 300px;
+  height: auto;
+  transform: rotate(13deg);
+  transition: transform 0.3s ease-in-out;
+  mix-blend-mode: luminosity;
+}
+
+.content {
+  position: relative;
+}
+
+.headline h1 {
+  z-index: 2;
+  position: relative;
+}
+
+.image-container img {
+  z-index: 2;
+  position: relative;
+}
+
+.vector-image {
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  transform: translateY(10%);
+  width: 500px;
+  height: 500px;
+  mix-blend-mode: luminosity;
+  z-index: 1;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .vector-image {
+    display: none;
+  }
+
+  .headline {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 9px;
+    line-height: 27px;
+    margin: 0px;
+    color: #FFFFFF;
+  }
+
+  h1 {
+    margin: 0px;
+    font-weight: 500;
+  }
+
+  .content {
+    margin: 0px 20px;
+    flex-direction: column;
+   
+  }
+
+  .image-container img {
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    order: -1;
+    margin-top: 40px;
+    padding: 10px;
+  }
+
+  .headline {
+    order: 1;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .headline {
+    
+    font-size: 12px;
+    line-height: 32px;
+    margin: 0px;
+    color: #FFFFFF;
+ }
+
+}
+
+@media (min-width: 769px) and (max-width: 1025px){
+  .headline {
+    font-size: 17px;
+    line-height: 47px;
+  }
+  
+ 
+  
+  .content {
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 10px;
+  }
+  
+  .image-container img {
+    width: 200px;
+    
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .headline {
+    font-size: 20px;
+    line-height: 47px;
+  }
+  
+ 
+  
+  .content {
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 10px;
+  }
+  
+  .image-container img {
+    width: 250px;
+    
+  }
+}
